@@ -130,8 +130,9 @@ body.open .sidebar button > span {
   animation: appear 0.3s both;
 }
 
-
-
+a {
+  text-decoration: none;
+}
 
 .group {
   display: flex;
@@ -157,8 +158,8 @@ body.open .sidebar button > span {
 }
 
 .items-div {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header {
@@ -167,6 +168,8 @@ body.open .sidebar button > span {
   justify-content: space-between;
   height: 72px;
   background: rgba(255, 255, 255, 0.02);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header a {
@@ -186,4 +189,36 @@ body.open .sidebar button > span {
 .centered {
   display: flex;
   justify-content: center;
+}
+
+.blocks {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.block {
+  flex: auto;
+  border-radius: 100px;
+  margin-top: 20px;
+  background-color: var(--accent);
+  color: var(--dark);
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.block h3 {
+  padding: 20px;
+  margin: 0;
+  justify-content: center;
+}
+
+.block a {
+  color: var(--dark);
+  padding: 0;
+}
+
+.primary-bgc {
+  background-color: var(--primary);
 }
