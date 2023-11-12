@@ -1,10 +1,23 @@
+:root {
+  --background: #121212;
+  --accent: #77A0A9;
+  --primary: #AA4465;
+  --secondary: #ACECA1;
+  
+  --sidebar:var(--accent);
+  --sidebar-h: rgba(0, 0, 0, 0.1);
+
+  --dark: var(--background);
+  --bright: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: #121212;
+  background: var(--background);
 }
 
 button {
@@ -21,7 +34,7 @@ button {
   left: 0;
   width: 72px;
   height: 100%;
-  background: #048480;
+  background: var(--sidebar);
   transition: width 0.4s;
 }
 
@@ -96,7 +109,7 @@ body.open .sidebar-logo {
 }
 
 .sidebar button > span {
-  color: #f9f9f9;
+  color: var(--dark);
   opacity: 0;
   transition: 0.3s;
 }
