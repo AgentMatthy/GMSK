@@ -129,3 +129,35 @@ body.open .sidebar button > span {
   opacity: 1;
   animation: appear 0.3s both;
 }
+
+
+
+
+.group {
+  display: flex;
+}
+
+.row {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.main {
+  padding-left: 72px;
+  font-family: "Poppins";
+  font-variant: normal;
+  color: var(--accent);
+}
+
+.items-div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 1.25rem 0 0;
+  background: rgba(255, 255, 255, 0.02);
+}
