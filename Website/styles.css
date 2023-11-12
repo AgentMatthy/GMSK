@@ -139,7 +139,14 @@ body.open .sidebar button > span {
 
 .row {
   display: inline-flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.row-right {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .main {
@@ -157,7 +164,15 @@ body.open .sidebar button > span {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 72px;
-  padding: 0 1.25rem 0 0;
   background: rgba(255, 255, 255, 0.02);
+}
+
+.header a {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: x-large;
+  text-decoration: none;
+  color: var(--accent);
 }
