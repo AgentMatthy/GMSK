@@ -222,3 +222,7 @@ a {
 .primary-bgc {
   background-color: var(--primary);
 }
+
+.primary-c {
+  color: var(--primary);
+}
