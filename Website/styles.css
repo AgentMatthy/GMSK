@@ -176,3 +176,14 @@ body.open .sidebar button > span {
   text-decoration: none;
   color: var(--accent);
 }
+
+
+
+
+
+
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
