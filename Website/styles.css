@@ -261,7 +261,7 @@ a {
 
 
 .slide-in-blurred-bottom {
-	animation: slide-in-blurred-bottom 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1000ms both;
+	animation: slide-in-blurred-bottom 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 500ms both;
 }
 
 @keyframes slide-in-blurred-bottom {
@@ -281,7 +281,7 @@ a {
 
 
 .slide-in-left {
-	animation: slide-in-left 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) 500ms both;
+	animation: slide-in-left 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) 0ms both;
 }
 
 @keyframes slide-in-left {
