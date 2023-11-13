@@ -164,6 +164,7 @@ a {
 }
 
 .header {
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -262,7 +263,7 @@ a {
 
 
 .slide-in-blurred-bottom {
-	animation: slide-in-blurred-bottom 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 500ms both;
+	animation: slide-in-blurred-bottom 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 @keyframes slide-in-blurred-bottom {
@@ -310,4 +311,47 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+
+
+
+.anim-delay-100 {
+  animation-delay: 100ms;
+}
+
+.anim-delay-200 {
+  animation-delay: 200ms;
+}
+
+.anim-delay-300 {
+  animation-delay: 300ms;
+}
+
+.anim-delay-400 {
+  animation-delay: 400ms;
+}
+
+.anim-delay-500 {
+  animation-delay: 500ms;
+}
+
+.anim-delay-600 {
+  animation-delay: 600ms;
+}
+
+.anim-delay-700 {
+  animation-delay: 700ms;
+}
+
+.anim-delay-800 {
+  animation-delay: 800ms;
+}
+
+.anim-delay-900 {
+  animation-delay: 900ms;
+}
+
+.anim-delay-1000 {
+  animation-delay: 1000ms;
 }
