@@ -36,6 +36,7 @@ button {
   height: 100%;
   background: var(--sidebar);
   transition: width 0.4s;
+  z-index: 99;
 }
 
 body.open .sidebar {
