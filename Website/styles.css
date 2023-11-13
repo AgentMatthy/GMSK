@@ -229,6 +229,15 @@ a {
   color: var(--primary);
 }
 
+.item-margin {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.font-xxl {
+  font-size: xx-large;
+}
+
 
 
 
@@ -311,6 +320,49 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.slide-in-right {
+	animation: slide-in-right 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hover-prim {
+  --b: 5px;     /* the border thickness*/
+  --g: 5px;    /* the gap */
+  --c: var(--primary); /* the color */
+  outline: 35px solid rgba(0, 0, 0, 0);
+  outline-offset: -35px;
+  cursor: pointer;
+  transition: .3s;
+}
+.hover-prim:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
+.hover-acc {
+  --b: 5px;     /* the border thickness*/
+  --g: 5px;    /* the gap */
+  --c: var(--accent); /* the color */
+  outline: 35px solid rgba(0, 0, 0, 0);
+  outline-offset: -35px;
+  cursor: pointer;
+  transition: .3s;
+}
+.hover-acc:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
 }
 
 
