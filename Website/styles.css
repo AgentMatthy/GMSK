@@ -8,6 +8,7 @@
   --sidebar-h: rgba(0, 0, 0, 0.1);
 
   --dark: var(--background);
+  --darkify: rgba(0, 0, 0, 0.5);
   --bright: #ffffff;
 }
 
@@ -42,9 +43,30 @@ button {
   pointer-events: none;
 }
 
-.filler {
+.code {
   display: flex;
-  height: 100%;
+  background-color: var(--darkify);
+  border-color: var(--accent);
+  border-width: 2px;
+  border-radius: 15px;
+  border-style:groove;
+  transition: all .2s linear;
+  z-index: 1;
+  width: 100%;
+  padding: 15px;
+}
+
+.code code {
+  flex: auto;
+
+}
+
+.code:hover {
+  border-color: var(--primary);
+}
+
+.spacer {
+  height: 72px;
 }
 
 .wholepage {
@@ -295,6 +317,7 @@ a {
 }
 
 .cursor {
+  pointer-events: none;
   position: fixed;
   background-color: var(--primary);
   width: 20px;
