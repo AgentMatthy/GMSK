@@ -53,6 +53,8 @@
 </aside>
 
 <!---------------------------------------->
+<div class="cursor"></div>
+<div class="wholepage"></div>
 
 <div class="main">
   <div class="header slide-in-top">
@@ -92,14 +94,29 @@
         <h3>Custom</h3>
       </a>
     </div>
-
-
+  </div>
+  
+  <div class="footer slide-in-bottom">
 
   </div>
 </div>
 
-    <script type="text/javascript">
-      const toggleSidebar = () => document.body.classList.toggle("open");
-    </script>
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+<script>
+  const cursor = new MouseFollower({
+      container: document.body,
+      speed: 0.8,
+      el: '.cursor'
+  });
+</script>
+
+<script type="text/javascript">const toggleSidebar = () => document.body.classList.toggle("open");</script>
   </body>
 </html>

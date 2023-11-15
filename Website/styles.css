@@ -32,6 +32,23 @@ button {
   cursor: pointer;
 }
 
+.wholepage {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: var(--background);
+  z-index: 50;
+  opacity: 60%;
+  pointer-events: none;
+  transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+body.open .wholepage {
+  opacity: 100;
+  width: 100%;
+}
+
 .sidebar {
   position: absolute;
   overflow: hidden;
@@ -246,12 +263,30 @@ a {
   font-size: xx-large;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 72px);
+  height: 72px;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
 /*///////////////////////////////////////*/
 /*///////////////////////////////////////*/
 /*///////////////////////////////////////*/
 
 .logo {
   height: 20px;
+}
+
+.cursor {
+  position: fixed;
+  background-color: var(--primary);
+  width: 20px;
+  height: 20px;
+  left: -10px;
+  top: -10px;
+  border-radius: 10px;
 }
 
 /*///////////////////////////////////////*/
@@ -383,6 +418,21 @@ a {
 @keyframes slide-in-top {
   0% {
     transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-bottom {
+	animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0ms both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
     opacity: 0;
   }
   100% {
