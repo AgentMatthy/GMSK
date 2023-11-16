@@ -58,7 +58,6 @@ button {
 
 .code code {
   flex: auto;
-
 }
 
 .code:hover {
@@ -325,6 +324,7 @@ a {
   left: -10px;
   top: -10px;
   border-radius: 10px;
+  z-index: -1;
 }
 
 /*///////////////////////////////////////*/
@@ -382,7 +382,7 @@ a {
   height: 5px;
   left: 50%;
   bottom: 0;
-  transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all .3s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
 .anim-link2:hover::after {
@@ -520,6 +520,14 @@ a {
 .hover-acc:hover {
   outline: var(--b) solid var(--c);
   outline-offset: var(--g);
+}
+
+.hover-acc:active {
+  outline-offset: 0;
+}
+
+.hover-prim:active {
+  outline-offset: 0;
 }
 
 
